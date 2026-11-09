@@ -1,0 +1,1 @@
+{"positive_concepts": {"task": ["粗剪", "气口", "koubo-roughcut"]}, "description_required_concepts": [], "recommended_threshold": 0.1, "negative_patterns": ["写一首诗"], "should_trigger": [{"text": "请帮我粗剪自己的口播原片，整理重录和重复，保留完整字音，先确认相机总速度。"}, {"text": "koubo-roughcut 粗剪与气口"}], "should_not_trigger": [{"text": "写一首诗"}], "near_neighbor": [{"text": "只帮我改一个文件名"}]}

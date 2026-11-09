@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-11-09",
+  "package": {
+    "name": "koubo-roughcut",
+    "version": "0.1.0",
+    "owner": "Lonc2100",
+    "maturity_tier": "scaffold",
+    "lifecycle_stage": null,
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "用户给真人口播原片或带时间码逐字稿，要求删重录、重复、卡顿、整理气口、制作粗剪时使用；不擅改观点或自动发布。",
+    "job_to_be_done": "用户给真人口播原片或带时间码逐字稿，要求删重录、重复、卡顿、整理气口、制作粗剪时使用；不擅改观点或自动发布。",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "请帮我粗剪自己的口播原片，整理重录和重复，保留完整字音，先确认相机总速度。",
+      "koubo-roughcut 粗剪与气口"
+    ],
+    "should_not_trigger": [
+      "写一首诗"
+    ],
+    "near_neighbor": [
+      "只帮我改一个文件名"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references\\production-methods.md",
+      "references\\standards.md"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": null,
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {},
+    "trust": {},
+    "permissions": {},
+    "degradation": {}
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}
