@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "threshold": 0.1,
+  "description_concepts": [
+    "task"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "请帮我粗剪自己的口播原片，整理重录和重复，保留完整字音，先确认相机总速度。",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "task"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "koubo-roughcut 粗剪与气口",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "task"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "写一首诗",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "写一首诗"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "只帮我改一个文件名",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      }
+    ]
+  }
+}
